@@ -27,7 +27,6 @@ public class MeasurementPopUp : MonoBehaviour
     private string url;
 
 
-
     void Start()
     {
         //url = "http://
@@ -50,7 +49,7 @@ public class MeasurementPopUp : MonoBehaviour
     }
 
     void OnTriggerExit(Collider other)
-    { 
+    {
         PopUp.SetActive(false); 
     }
 
@@ -72,6 +71,6 @@ public class MeasurementPopUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.UpdatePopupInfo();
+
     }
 }
