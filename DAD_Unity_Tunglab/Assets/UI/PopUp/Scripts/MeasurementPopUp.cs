@@ -44,13 +44,19 @@ public class MeasurementPopUp : MonoBehaviour
 
         url = phpURL + "?tagname=" + name + "&amount=1";
 
-        MeasurementText.text = GetMeasurementsFromDataBase();
+        //MeasurementText.text = GetMeasurementsFromDataBase();
+        this.UpdatePopupInfo();
 
     }
 
     void OnTriggerExit(Collider other)
     { 
         PopUp.SetActive(false); 
+    }
+
+    private void UpdatePopupInfo()
+    {
+        MeasurementText.text = GetMeasurementsFromDataBase();
     }
     
     private string GetMeasurementsFromDataBase()
@@ -66,6 +72,6 @@ public class MeasurementPopUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        this.UpdatePopupInfo();
     }
 }
