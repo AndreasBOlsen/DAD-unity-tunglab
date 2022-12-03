@@ -1558,7 +1558,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -18.022629, y: 36.200172, z: -18.508343, w: 42.04191}
+  m_margin: {x: -9.893776, y: 39.472343, z: -8.642426, w: 42.04191}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13624,8 +13624,8 @@ GameObject:
   - component: {fileID: 1825374686}
   - component: {fileID: 1825374691}
   - component: {fileID: 1825374690}
+  - component: {fileID: 1825374692}
   - component: {fileID: 1825374689}
-  - component: {fileID: 1825374688}
   - component: {fileID: 1825374687}
   m_Layer: 0
   m_Name: DG1-RUN
@@ -13642,8 +13642,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825374685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.33100033, y: -1.0210001, z: 0.9460006}
-  m_LocalScale: {x: 0.3, y: 0.01, z: 0.3}
+  m_LocalPosition: {x: 0.33100033, y: -1.063, z: 0.9460006}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1394527360}
@@ -13662,22 +13662,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
---- !u!114 &1825374688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825374685}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad0a25179d204b47adb5fcc3b3ef8e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PopUp: {fileID: 1606474185}
-  TMP_Tagname: {fileID: 1763834782}
-  TMP_Measurement: {fileID: 926110427}
-  phpURL: http://127.0.0.1:5555/get-measurement-data-by-instrument.php
 --- !u!136 &1825374689
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13712,7 +13696,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f93f1c88eec483f4d8c821abecd1da0c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13741,7 +13725,24 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825374685}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1825374692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825374685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817ed2882d5867641846b102c52bce6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PopUp: {fileID: 1606474185}
+  TMP_Tagname: {fileID: 1763834782}
+  TMP_Measurement: {fileID: 926110427}
+  phpURL: http://127.0.0.1:5555/get-measurement-data-by-instrument.php
+  myMaterial: {fileID: 2100000, guid: f93f1c88eec483f4d8c821abecd1da0c, type: 2}
 --- !u!64 &1826940721
 MeshCollider:
   m_ObjectHideFlags: 0
