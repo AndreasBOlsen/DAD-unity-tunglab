@@ -53,6 +53,7 @@ public class Color_change : MonoBehaviour
         url = phpURL + "?tagname=" + name + "&amount=1";
 
         //MeasurementText.text = GetMeasurementsFromDataBase();
+        PopUp.SetActive(false);
         this.UpdatePopupInfo();
     }
 
